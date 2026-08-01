@@ -92,9 +92,9 @@ p {
 
 .hero article p {
     margin: 0;
-    padding: 10;
+    padding: 10px;
     color: #cce8eb;
-    font-size: 0.7% rem;
+    font-size: 1.3%rem;
     line-height: 1.3;
     text-align: justify;
     background-color: var(--accent2-color);
