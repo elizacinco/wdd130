@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/csss2?family=Roboto&family=Rock+Salt&display=swap');
 
-:root {
+html#wwr/styles/rafting.css:root {
     --primary-color: #1d4e89;
     --secondary-color: #3b8ea5;
     --accent1-color: #2f4858;
     --accent2-color: #f4d35e;
 
     --heading-font: "Rock Salt", cursive;
-    --body-font: "Roboto", san-serif;
+    --body-font: "Roboto", sans-serif;
 }
 
 * {
