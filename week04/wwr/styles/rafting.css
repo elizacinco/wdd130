@@ -1,0 +1,256 @@
+:root {
+    --primary-color: #1d4e89;
+    --secondary-color: #3b8ea5;
+    --accent1-color: #2f4858;
+    --accent2-color: #02020160;
+
+    --heading-font: "Rock Salt", cursive;
+    --body-font: "Roboto", sans-serif;
+}
+
+/*CSS Reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*General Page Styles*/
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+}
+
+/*Margin Page Width*/
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+/*Headings*/
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+/*General Section Spacing*/
+
+nav,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+p {
+    margin: 16px;
+}
+
+/*=================================
+HEADER - CSS GRID
+=================================*/
+
+header {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    padding: 16px;
+    background-color: #ffffff;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+/*Logo*/
+header img {
+    width: 120px;
+    height: auto;
+}
+
+/*Navigation - CSS FLEX*/
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/*Navigation Links*/
+header nav a {
+    padding: 12px 18px;
+    color: var(--primary-color);
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid var(--secondary-color);
+}
+
+/*Navigation Hover*/
+header nav a:hover {
+    background-color: var(--secondary-color);
+    color: #ffffff;
+}
+
+/*=================================
+HERO SECTION
+=================================*/
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/*Hero Heading*/
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: #fff;
+}
+
+/*Hero Article*/
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: var(--accent-color);
+    opacity: 0.9;
+}
+
+/*Hero Artcile Text*/
+.hero article p {
+    margin: 0;
+    padding: 10px;
+    color: #cce8eb;
+    font-size: 1.3rem;
+    line-height: 1.3;
+    text-align: justify;
+    background-color: var(--accent2-color);
+}
+
+/*Hero Article Image*/
+.hero article img {
+    float: right;
+    width: 125px;
+    margin-left: 16px;
+    margin-bottom: 9px;
+    background-color: var(--secondary-color);
+}
+
+/*=================================
+HERO SECTION
+=================================*/
+
+.history {
+    text-align: center;
+}
+
+/*Paragraph - Image - Paragraph*/
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr 250px 1fr;
+    align-items: center;
+    gap: 16px;
+    text-align: left;
+}
+
+/*History Paragraphs*/
+.history-content p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+/*History Image*/
+.history-content img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/*=================================
+ADVENTURES SECTION
+=================================*/
+
+.adventures {
+    text-align: center;
+}
+
+/*Five Images in One Horizontal Row*/
+.adventure-gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+/*Remove Default Figure Margin*/
+.adventure-gallery figure {
+    margin: 0;
+}
+
+/*Adveture Images*/
+.adventure-gallery img {
+    width: 100px;
+    height: 120px;
+    object-fit: cover;
+}
+
+/*Adventure Captions*/
+.adventure-gallery figcaption {
+    margin-top: 8px;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+/*=================================
+FOOTER - CSS FLEX
+=================================*/
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+/*Footer Text*/
+footer p {
+    margin: 0;
+}
+
+/*Social Media Icons*/
+.socialmedia {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+}
+
+/*Remove Link Decorations*/
+.socialmedia a {
+    padding: 0;
+    text-decoration: none;
+}
+
+/*Social Media Images*/
+.socialmedia img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
