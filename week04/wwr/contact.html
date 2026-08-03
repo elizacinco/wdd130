@@ -30,34 +30,100 @@
         <h1>Contact Us</h1>
 
         <!---Company Information-->
-        <section class="contact information">
+        <section class="contact-info">
 
-            <div class="company-details">
-                <h2>Get in Touch</h2>
-                <p>
-                    <strong>Addres:</strong><br>
-                    123 River Adventure Road<br>
-                    Rapids Valley, USA
-                </p>
-
-                <p>
-                    <strong>Phone:</strong><br>
-                    +1 (555) 123-4567
-                </p>
-
-                <p>
-                    <strong>Email:</strong><br>
-                    info@raftingtravel.com
-                </p>
-            </div>
-
-            <iframe src="https://www.google.com/maps/embed?pb=1m" title="Rafting Travel location"
-              loading="lazy">
-            </iframe>
+            <h2>Get in Touch with Rafting Travel</h2>
+            <p>
+                123 River Adventure Road<br>
+                Rapids Valley, USA<br>
+                +1 (555) 123-4567<br>
+                info@raftingtravel.com
+            </p>
 
         </section>
 
-        <!--Emplyee Profiles-->
+        <!--Map and Contact Form-->
+        <section class="contact-content">
+
+            <!--Google Map-->
+            <div class="map">
+
+                <iframe src="https://www.google.com/maps/embed?pb=1m"
+                  title="Rafting Travel location" loading="lazy">
+                </iframe>
+
+            </div>
+
+        </section>
+
+        <!--Contact Form-->
+        <section class="contact-form-section">
+
+            <form class="contact-form">
+
+                <div class="form-item">
+                    <label for="name">
+                        Eliza Juancho Cinco
+                    </label>
+
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-item">
+                    <label for="email">
+                        Email
+                    </label>
+
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <fieldset>
+                    <legend>
+                        Purpose of Your Message
+                    </legend>
+
+                    <label>
+                        <input type="radio" name="purpose" value="general-inquiry" required>
+
+                        General Inquiry
+                    </label>
+
+                    <label>
+                        <input type="radio" name="purpose" value="reservation-question">
+
+                        Reservation Question
+                    </label>
+
+                    <label>
+                        <input type="radio" name="purpose" value="website-suggestion">
+
+                        Website Suggestion
+                    </label>
+                </fieldset>
+
+                <label for="message">
+                    Your Message
+                </label>
+
+                <textarea id="message" name="message" row="6" required>
+                    </textarea>
+                </div>
+
+                <label class="newsletter">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+
+                    Please subscribe me to the monthy newsletter
+                </label>
+
+                <button type="submit">
+                    Send My Message
+                </button>
+
+            </form>
+
+        </section>
+
+        <!--Emplyees-->
         <section class="employees">
 
             <h2>Meet Our Team</h2>
@@ -75,7 +141,6 @@
                 <figure>
                     <img src="images/employee2.jpg"
                       alt="Elena Cruz, Rafting Travel Head River Guide">
-
                     <figcaption>
                         Elena Cruz<br>
                         <span>Head River Guide</span>
@@ -91,61 +156,6 @@
                     </figcaption>
                 </figure>
             </div>
-
-        </section>
-
-        <!--Contact Form-->
-        <section class="contact-form-section">
-
-            <h2>Send Us a Message</h2>
-            <form class="contact-form">
-
-                <div class="form-item">
-                    <label for="name">
-                        Eliza Juancho Cinco
-                    </label>
-
-                    <input type="text" id="name" name="name" required>
-                </div>
-
-                <fieldset>
-                    <legend>
-                        Purpose of Your Message
-                    </legend>
-
-                    <label>
-                        <input type="radio" name="purpose" value="general-inquiry" required>
-
-                        General Inquiry
-                    </label>
-
-                    <label>
-                        <input type="radio" name="purpose" value="reservatio-question">
-
-                        Reservation Question
-                    </label>
-                </fieldset>
-
-                <div class="form-item">
-                    <label for="message">
-                        Your Message
-                    </label>
-
-                    <textarea id="message" name="message" row="6" required>
-                    </textarea>
-                </div>
-
-                <label class="newsletter">
-                    <input type="checkbox" id="newsletter" name="newsletter">
-
-                    Please subscribe me to the monthy newsletter
-                </label>
-
-                <button type="submit">
-                    Send My Message
-                </button>
-
-            </form>
 
         </section>
 
