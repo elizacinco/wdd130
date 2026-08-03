@@ -254,3 +254,163 @@ footer p {
     height: 35px;
     object-fit: contain;
 }
+
+/*=================================
+Contact Page
+=================================*/
+
+/*Contact Page Heading*/
+main > h1 {
+    margin: 24px 16px;
+    text-align: center;
+}
+
+/*Company Information and Map*/
+.contact-information {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    align-items: center;
+    padding: 24px;
+    background-color: #e8f1f5
+}
+
+.company-detalis h2 {
+    text-align: center;
+}
+
+.company-details p {
+    margin: 16px 0;
+    line-height: 16;
+}
+
+/*Embedded Google Map*/
+.contact-information iframe {
+    width: 100%;
+    height: 280px;
+    border: 1px solid var(--secondary-color);
+}
+
+/*Employee Profiles*/
+.employees {
+    padding: 24px;
+    text-align: center;
+}
+
+.employee-profiles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.employee-profiles figure {
+    margin: 0;
+}
+
+.employee-profiles img {
+    width: 100px;
+    max-width: 200px;
+    object-fit: cover;
+    border-radius: 50%
+}
+
+.employee-profiles figcaption {
+    margin-top: 10px;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.emplyee-prfiles figcaption span {
+    color: var(--accent1-color);
+    font-weight: normal;
+}
+
+/*Contact Form*/
+.contact-forma-section {
+    padding: 24px;
+}
+
+.contatc-form-section h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-form {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 24px;
+    background-color: #e8f1f5 border 1px solid var(var(--secondary-color));
+}
+
+/*Form Fields*/
+.form-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+.form-item label {
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+.form-item input,
+.form-item textarea {
+    width: 100%;
+    padding: 12px;
+    font-family: var(--body-font);
+    font-size: 1rem;
+    border: 1px solid var(--secondary-color);
+}
+
+/*Radio Button Group*/
+.contact-form fieldset {
+    margin-bottom: 18px;
+    padding: 16px;
+    border: 1px solid var(--secondary-color);
+}
+
+.contact-form legend {
+    padding: 0 8px;
+    font-weight: bold;
+}
+
+.contact-form fieldset label {
+    display: block;
+    margin: 10px 0;
+}
+
+/*Radio Buttons*/
+.contact-form input[type="radio"] {
+    width: auto;
+    margin-right: 8px;
+}
+
+/*Newsletter Checkbox*/
+.newsletter {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.newsletter input[type="checkbox"] {
+    width: auto;
+}
+
+/*Submit Button*/
+.contact-form button {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    background-color: var(--primary-color);
+    color: #ffffff font-family var(--body-font);
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form button {
+    background-color: var(--secondary-color);
+}
